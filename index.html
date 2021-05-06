@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="myDiv" class="header">
+      <div class="wrapper">
+        <h2>Todo</h2><span><img src="./images/icon-sun.svg" alt=""></span>
+      </div>
+      <form class="form" onclick="newElement()">
+         <input type="text" id="myInput"  class="addBtn" placeholder="Create new todo.." ">
+        <label id="checkbox">
+          <input id ="input" type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+       </form>
+    </div>
+    <ul id="myUl">
+      <li >Complete online JavaScript course</li>
+      <li>Jog around the park 3x</li>
+      <li>10 minutes meditation</li>
+      <li>Read for 1 hour</li>
+      <li>Pick up groceries</li>
+      <li>Complete Todo App on Frontend Mentor</li>
+    </ul>
+    <div class="div-items">
+      <span>5 items left</span><span>Clear Completed</span>
+    </div>
+    <div class="div-status">
+      <span>All</span>
+      <span>Active</span>
+      <span>Completed</span>
+    </div>
+    <div class="drag-and__drop">Drag and drop to reorder list</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
